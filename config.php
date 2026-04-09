@@ -1,5 +1,6 @@
 <?php
 // Application configuration — v1.1.0
+//GITHUB
 define('APP_NAME', 'GoDeploy Test');
 define('APP_VERSION', '1.1.0');
 define('APP_ENV', 'production');
