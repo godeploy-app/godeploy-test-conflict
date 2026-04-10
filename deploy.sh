@@ -1,9 +1,10 @@
 #!/bin/bash
 set -e
-echo "Deploying v1.1.0..."
-composer install --no-dev
+echo "Deploying v1.5.0..."
+composer install --no-dev --optimize-autoloader
 php artisan migrate --force
 php artisan cache:clear
 php artisan config:cache
 php artisan route:cache
-echo "Deploy v1.1.0 complete at $(date)"
+php artisan queue:restart
+echo "Deploy v1.5.0 complete at $(date)"
