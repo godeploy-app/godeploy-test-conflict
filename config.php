@@ -1,5 +1,6 @@
 <?php
 // Application configuration — v1.5.0 (remote upgrade)
+//added here
 define('APP_NAME', 'GoDeploy Test');
 define('APP_VERSION', '1.5.0');
 define('APP_ENV', 'production');
